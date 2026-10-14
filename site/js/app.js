@@ -443,7 +443,7 @@ function viewLanding() {
             </button>
             <button class="chip chip--ghost" type="button" data-search>搜索</button>
             <a class="chip chip--ghost" href="#/toc">目录</a>
-            <button class="chip chip--ghost" type="button" data-group>交流群</button>
+            <button class="chip chip--ghost" type="button" data-group>咨询</button>
           </span>
         </div>
 
@@ -526,21 +526,12 @@ function viewLanding() {
         </section>
 
         <footer class="lp__foot">
-          <p class="lp__foot-sig">DOUBAO WORK · FIELD MANUAL</p>
-          <nav class="lp__foot-links" aria-label="站外链接">
-            <a href="${FOOT_LINKS.contact}" target="_blank" rel="noopener noreferrer">联系我们</a>
-            <a class="lp__foot-git" href="${FOOT_LINKS.repo}" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库">${GITHUB_ICON}</a>
-            <a href="${FOOT_LINKS.community}" target="_blank" rel="noopener noreferrer">加入 AgentWork 社区</a>
-          </nav>
-          <p class="lp__foot-copy">© 豆包工作蓝皮书 · <a href="/privacy">统计说明</a> · <a href="/admin/analytics">管理</a></p>
-          <nav class="lp__foot-friends" aria-label="友情链接">
-            <span class="lp__foot-friends-label">友情链接</span>
-            ${friendLinksHtml()}
-          </nav>
-        </footer>
-      </div>
-    </div>`;
-}
+  <p class="lp__foot-sig">DOUBAO WORK · FIELD MANUAL</p>
+  <nav class="lp__foot-links" aria-label="站外链接">
+    <a href="${FOOT_LINKS.contact}" target="_blank" rel="noopener noreferrer">联系我们</a>
+  </nav>
+  <p class="lp__foot-copy">© 豆包工作蓝皮书 · <a href="/privacy">统计说明</a> · <a href="/admin/analytics">管理</a></p>
+</footer>
 
 /* 书封动效：标题逐字升起、网格指针视差、点入口时 3D 翻开封面再跳转 */
 function initLanding() {
@@ -1056,9 +1047,7 @@ function viewDoc(entry) {
 
 /* 页脚外链集中在这里改 */
 const FOOT_LINKS = {
-  repo: "https://github.com/AlephAITech/DoubaoWorkGuide",
-  contact: "https://github.com/AlephAITech/DoubaoWorkGuide/issues",
-  community: "https://github.com/AlephAITech",
+  contact: "#",
 };
 
 /* 页脚友链 */
@@ -1084,15 +1073,9 @@ function footer(tight = false) {
         <p class="foot__sig">DOUBAO WORK · FIELD MANUAL</p>
         <nav class="foot__links" aria-label="站外链接">
           <a href="${FOOT_LINKS.contact}" target="_blank" rel="noopener noreferrer">联系我们</a>
-          <a class="foot__git" href="${FOOT_LINKS.repo}" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库">${GITHUB_ICON}</a>
-          <a href="${FOOT_LINKS.community}" target="_blank" rel="noopener noreferrer">加入 AgentWork 社区</a>
         </nav>
         <p class="foot__copy">© 豆包工作蓝皮书 · <a href="/privacy">统计说明</a> · <a href="/admin/analytics">管理</a></p>
       </div>
-      <nav class="foot__friends" aria-label="友情链接">
-        <span class="foot__friends-label">友情链接</span>
-        ${friendLinksHtml()}
-      </nav>
     </footer>`;
 }
 
