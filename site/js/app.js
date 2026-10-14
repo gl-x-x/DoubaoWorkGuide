@@ -531,7 +531,7 @@ function viewLanding() {
     <a href="${FOOT_LINKS.contact}" target="_blank" rel="noopener noreferrer">联系我们</a>
   </nav>
   <p class="lp__foot-copy">© 豆包工作蓝皮书 · <a href="/privacy">统计说明</a> · <a href="/admin/analytics">管理</a></p>
-</footer>
+</footer>`;
 
 /* 书封动效：标题逐字升起、网格指针视差、点入口时 3D 翻开封面再跳转 */
 function initLanding() {
