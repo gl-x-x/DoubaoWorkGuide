@@ -187,12 +187,12 @@ a {
   --hover-wash: rgba(0, 0, 0, 0.025);
   /* 全站唯一的品牌色源：豆包 Logo 五阶蓝。
      组件只引用语义别名，后续不再各自维护近似蓝、紫蓝或藏青。 */
-  --doubao-deep: #7c2d12;
---doubao-primary: #9a3412;
---doubao-mid: #c2410c;
---doubao-light: #fb923c;
---doubao-highlight: #ffedd5;
---brand-ink: #431407;
+  --doubao-deep: #1d4ed8;
+--doubao-primary: #3b82f6;
+--doubao-mid: #60a5fa;
+--doubao-light: #93c5fd;
+--doubao-highlight: #dbeafe;
+--brand-ink: #1e3a8a;
   /* 白底链接与白字按钮使用深蓝，以保持至少 4.5:1 的正文对比度。 */
   --brand-blue: var(--doubao-deep);
   --brand-fill: var(--doubao-deep);
